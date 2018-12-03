@@ -47,14 +47,12 @@ public class Employee {
    }
 
 
-   public void printEmployee() {
-      System.out.println("Employee{" +
-                            "empId=" + getEmpId() +
-                            ", name='" + getName() + '\'' +
-                            ", ssn='" + getSsn() + '\'' +
-                            ", salary=" + NumberFormat.getCurrencyInstance()
-                                                      .format(
-                                                         (double) getSalary()) +
-                            '}');
+   @Override
+   public String toString() {
+      return
+         "empId=" + getEmpId() +
+         ", name='" + getName() + '\'' +
+         ", ssn='" + getSsn() + '\'' +
+         ", salary=" + NumberFormat.getCurrencyInstance().format(getSalary());
    }
 }
