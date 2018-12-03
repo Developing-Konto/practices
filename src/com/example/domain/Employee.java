@@ -50,9 +50,9 @@ public class Employee {
    @Override
    public String toString() {
       return
-         "Employee id=" + getEmpId() +
-         "\nEmployee name=\t'" + getName() + '\'' +
-         "\nEmployee ssn=\t'" + getSsn() + '\'' +
-         "\nEmployee salary=\t" + NumberFormat.getCurrencyInstance().format(getSalary()) ;
+         "Employee ID:       " + getEmpId() + "\n" +
+         "Employee Name:     " + getName() + "\n" +
+         "Employee SSN:      " + getSsn() + "\n" +
+         "Employee Salary:   " + NumberFormat.getCurrencyInstance().format(getSalary()) ;
    }
 }

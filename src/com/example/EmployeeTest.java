@@ -37,9 +37,8 @@ public class EmployeeTest {
    }
 
    public static void printEmployee(Employee employee) {
-      System.out.println();
-      System.out.println(employee.toString());
-      System.out.println("Employee type:\t" + employee.getClass().getName());
+      System.out.println("Employee type:\t" + employee.getClass().getSimpleName());
+      System.out.println(employee );
    }
 
 
